@@ -1,0 +1,179 @@
+Python 
+se especializa en:
+iot, inteligencia artificial, Backend, data science.
+
+Ventajas
+-Fácil
+-Elegante
+-Buenas practicas
+
+Algoritmo
+intruciones para hacer cierta tarea y llegar a la meta
+-pasos ordenados para resolver algo
+-finito
+-si o si tiene que tener finalidad
+
+---------------------------------------------------------------------------------sintaxis--------------------------------------------------------------------------------------------------
+Operaciones aritmeticas
+suma = +
+restar = -
+multiplicar = *
+dividr = /
+elevarlo = **
+modulo (o resto) = % #cuantas veces puedes divir ese numero con lo que le das al 2
+
+Variables #datos que varian segun que los queramos asignar
+numero = 22
+texto = "halo"
+#texto es denominado como strings
+------------------------------------------------------------------------------Data type-------------------------------------------------------------------------------------------
+tipos de datos
+datos numericos y cadenas
+#formas de hacerle entender a la maquina que son
+-------------------------------------------------------------------------------cadenas----------------------------------------------------------------------------------------------
+str = cadenas #datos de texto o son datos que guardan texto para imprimir 
+se puede escribir asi 
+"print/s casa"
+"print"
+"hola" + "chao"
+"hola"+" "+"chao"
+"2" + "9" #no los suma sino que los pone al siguiente que seria 29
+#se puede multiplicar los los strings
+"print" * 3
+
+int = enteros #numeros sin decimal
+float = flotantes #numeros con decimal separados por .
+
+comentarios 
+#
+
+listas y tuplas 
+#se pueden escibir de muchas formas 
+list(1,10.4,"hola",true)
+lista = [10,10.2,"hola",true]
+tulpe(1,10.4,"hola",true)
+tupla = (1,10.4,"hola",true)
+
+booleanos
+#datos logicos con datos numericos
+#formas de usar esos numero es tambien el poder compararlos  asi que usaremos los siguientes datos
+menor que = < . ejemplo 3 < 5 = true 
+mayor que = > . ejemplo 4 > 6 = false 
+igual que = == . ejemplo 7 == 7 = false 
+menor o igual que = <= . ejemplo 3 <= 3 = true
+mayor o igual que = >= . ejemplo 3 >= 8 = false
+distinto de = != . ejemplo 20 != 30 = true
+(2 +2 == 4) = true
+
+#True o False son propias de python
+
+#tambien podemos usar solo para comparar 2 varibles
+
+and 
+#entrega el resultado true si todos son true y si hay un false el resultado es false
+
+or 
+#entrega el resultado true independiente de que tenga un false pero si los 2 son flase seran false
+
+not 
+#entrega la respuesta inverse si es true sera false y si es false entregara true
+
+def
+#definir una funcion 
+
+return 
+#devolvemos con algo puesto
+
+as
+#alias de una funcion
+
+else
+#es una ruta si no es true o flase
+
+if 
+
+-objetos
+#exite algo llamado class que calasifica una nombre o cosa donde dentro de este se pueden definir varibables 
+class humano:
+ saludar = "Hola"
+ despedirce = "chao"
+print(humano.saludar)
+#tambien podemos asignar variables que actuen de esa forma 
+print =  humano
+print(print.saludar)
+#ademas remplazar aciones mediante el codigo avanze
+english_human = humano
+english_human.saludar = "hello"
+english_human.despedirce = "bye"
+#y es asi como podemos reemplazar lo que hace
+class calculator:
+    def dividr(a,c):
+        return a/c
+print(int(calculator.dividr(70,7)))
+#tambien podemos hacer operaciones matematicas con esto definiendo funciones
+# luego devolverlas 
+#para que luego imprima lo que buscas en el mismo orden
+
+-sintesis de tipos de datos
+#no olvidar que los tipos de datos por ahora son
+enteros = int
+flotantes son = float
+cadenas = str
+listas = list
+booleanos = bool
+objetos = type #es el nombre que resiblen las clases y los que tienen dentro pero no se utlizan asi sino que es una forma de nombrarloselsei
+
+-funciones basicas 
+#--type()
+#es una forma de ver que son las varibles
+
+#si tengo una lista tambien podria ver cuantas cosas tengo en ella
+lista = [10,32,123,56,866]
+print(max(lista)) #busca el valor maximo de la lista   
+print(min(lista)) #agarra el minimo de una lista
+print(len(lista)) #dice la cantidad de elementos que hay en una lista
+
+definir una funcion
+#para crear una funcion es lo primero que se pone es 
+def (nombre de lafuncion)(como tambien podemos ubicar la varible anterior):
+
+#luego de esto dentro de la funcion puede poner return #devuelve la variable con algo mas puesto
+
+-librerias
+#para importar librerias en py
+import (nombre de la libreria) as (alias)
+
+Estructura de logaritmos
+-condicionales basicos 
+if #es la ruta donde tiene que hacer si nos da cierto resultado
+else #es un punto donde si no se cumple o se cumple lo anterior sera por hay donde se siga
+-condicionales andados
+#dentro de py se puenden poner mas de un else o if dentro de todo lo que escribes
+def funcion(x):
+    if x % 2==0:
+        if x % 3==0:
+             print("hola")
+         else:
+             print("adiós")
+        else:
+            print("que te vaya bien")
+
+-iteraciones
+#repetir varios elementos
+for #es por un valor o una letra
+in #dentro de cierta lista
+while #timpo en ingles y es una forma de vuble
+
+operadores de py
+Operadores:
++=
+#le suma lo siguiente a la varible que contiene numeros
+
+-=
+#le resta lo siguiente a la variable que contiene numeros
+
+*=
+#lo multiplica lo siguiente a la variable que contiene numeros
+
+/=
+#lo divide lo siguiente a la variable que contiene numeros

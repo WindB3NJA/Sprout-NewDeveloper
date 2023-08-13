@@ -1,0 +1,11 @@
+para cmd 
+cd = entrar a la carpeta
+dir = ver lo que esta en la carpeta en la que estas
+python = usar un archivo .py de python
+
+para python
+print() o print("") = pita
+
+print("le print") = el print
+el_print = 2
+print(el_print) = 2
