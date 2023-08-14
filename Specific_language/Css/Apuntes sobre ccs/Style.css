@@ -9,3 +9,19 @@ h1 {
 #lorem {
     color: aquamarine;
 }
+
+[Texto="Parafo"] {
+    color: blueviolet;
+}
+
+h3 p {
+    color:rebeccapurple;
+}
+
+.sub-titulo-h3 p {
+    color:darkseagreen;
+}
+
+.Cambio-mouse:hover {
+    color: coral;
+}
