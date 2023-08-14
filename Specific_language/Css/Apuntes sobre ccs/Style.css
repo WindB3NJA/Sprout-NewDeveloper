@@ -1,4 +1,11 @@
-* {
-    border: 2px;
+h1 {
+    color:green;
+}
+
+.parrafo {
     color:red;
+}
+
+#lorem {
+    color: aquamarine;
 }
