@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="icon" href=".ico">
+        <link rel="stylesheet" type="text/css" href="Style.css">
+        <meta charset="utf-8">
+        <script>
+        //Declaracion de las 2 variables más importantes
+        let min = 1;
+        let max = 3;
+        let player = 0;
+        let machine = Math.floor(Math.random()*(max-min+1)+min);
+        //Bienvenida del jugardor y eleccion del mismo
+        alert("Bienvenido a Piedra Papel y Tijeras ;)")
+        player = prompt("Elija 1 de las 3 opciones: 1)✂️ 2)🪨 3)📄")
+        //Eleccion del jugador 
+        if(player == 1){
+            alert("Haz Elejido ✂️"); 
+        } else if(player == 2){
+            alert("Haz Elejido 🪨");
+        }else if(player == 3){
+            alert("Haz Elejido 📄");
+        } else{
+            alert("No selecciono nada, No puede jugar ❌")
+        }
+        //Eleccion de la maquina
+        if(machine == 1){
+            alert("La Maquina Elijio ✂️") 
+        } else if(machine == 2){
+            alert("La Maquina Elijio 🪨")
+        }else if(machine == 3){
+            alert("La Maquina Elijio 📄") 
+        } 
+        //Progreso de la partida
+        if(player == 1 && machine == 3){
+            alert("Elejiste ✂️ y La maquina elijio 📄")
+        }else if(player == 1 && machine == 2){
+            alert("Elejiste ✂️ y La maquina elijio 🪨")
+        }else if(player == 1 && machine == 1){
+            alert("Elejiste ✂️ y La maquina elijio ✂️")
+        }else if(player == 2 && machine == 3){
+            alert("Elejiste 🪨 y La maquina elijio 📄")
+        }else if(player == 2 && machine == 2){
+            alert("Elejiste 🪨 y La maquina elijio 🪨")
+        }else if(player == 2 && machine == 1){
+            alert("Elejiste 🪨 y La maquina elijio ✂️")
+        }else if(player == 3 && machine == 3){
+            alert("Elejiste 📄 y La maquina elijio 📄")
+        }else if(player == 3 && machine == 2){
+            alert("Elejiste 📄 y La maquina elijio 🪨")
+        }else if(player == 3 && machine == 1){
+            alert("Elejiste 📄 y La maquina elijio ✂️")
+        }
+        //Sistema de comparaciones 
+        if(player == machine){
+            alert("Haz empatado con la maquina 😆")
+        }else if(player == 1 && machine == 3){
+            alert("Ganaste wachin 😲")
+        }else if(player == 2 && machine == 1){
+            alert("Ganaste wachin 😲")
+        }else if(player == 3 && machine == 2){
+            alert("Ganaste wachin 😲")
+        }else{
+            alert("Perdiste wachin 😞")
+        }
+        </script>
+    </head>
+    <body>
+        <h1>Piedra Papel y tijjeras</h1>
+        <a>Por ahora tu partida a finalizado, <b>ya que todavia esta en desarrollo.</b></a>
+
+    </body>
+</html>
