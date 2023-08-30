@@ -6,9 +6,22 @@
         <link rel="stylesheet" type="text/css" href="Style.css">
         <meta charset="utf-8">
         <script>
-        //Declaracion de las 4 variables más importantes y la funcion de numeros aleatorios
+        //Declaracion de las 4 variables más importantes y la funcion de numeros aleatorios y la funcion de la jugada
             function random(min, max){
                 return Math.floor(Math.random()*(max-min+1)+min)
+            }
+            function choise(game){
+                let result = ""
+                if(game == 1){
+                    result = "✂️"; 
+                } else if(game == 2){
+                    result = "🪨";
+                } else if(game == 3){
+                    result = "📄";
+                } else{
+                    result ="No selecciono nada, No se puede jugar ❌"
+                }
+                return result
             }
         let min = 0;
         let max = 0;
@@ -17,50 +30,17 @@
         //Bienvenida del jugardor y eleccion del mismo
         alert("Bienvenido a Piedra Papel y Tijeras ;)")
         player = prompt("Elija 1 de las 3 opciones: 1)✂️ 2)🪨 3)📄")
-        //Eleccion del jugador 
-        if(player == 1){
-            alert("Haz Elejido ✂️"); 
-        }else if(player == 2){
-            alert("Haz Elejido 🪨");
-        }else if(player == 3){
-            alert("Haz Elejido 📄");
-        } else{
-            alert("No selecciono nada, No puede jugar ❌")
-        }
-        //Eleccion de la maquina
-        if(machine == 1){
-            alert("La Maquina Elijio ✂️") 
-        } else if(machine == 2){
-            alert("La Maquina Elijio 🪨")
-        }else if(machine == 3){
-            alert("La Maquina Elijio 📄") 
-        } 
+        //Eleccion del jugador y la maquina
+        alert("Haz elegido: " + choise(player)) 
+        alert("La maquina a elegido: " + choise(machine))
         //Progreso de la partida
-        if(player == 1 && machine == 3){
-            alert("Elejiste ✂️ y La maquina elijio 📄")
-        }else if(player == 1 && machine == 2){
-            alert("Elejiste ✂️ y La maquina elijio 🪨")
-        }else if(player == 1 && machine == 1){
-            alert("Elejiste ✂️ y La maquina elijio ✂️")
-        }else if(player == 2 && machine == 3){
-            alert("Elejiste 🪨 y La maquina elijio 📄")
-        }else if(player == 2 && machine == 2){
-            alert("Elejiste 🪨 y La maquina elijio 🪨")
-        }else if(player == 2 && machine == 1){
-            alert("Elejiste 🪨 y La maquina elijio ✂️")
-        }else if(player == 3 && machine == 3){
-            alert("Elejiste 📄 y La maquina elijio 📄")
-        }else if(player == 3 && machine == 2){
-            alert("Elejiste 📄 y La maquina elijio 🪨")
-        }else if(player == 3 && machine == 1){
-            alert("Elejiste 📄 y La maquina elijio ✂️")
-        }
+        alert("Haz elegido: " + choise(player) + " y la Maquina: " + choise(machine))
         //Sistema de comparaciones 
         if(player == machine){
             alert("Haz empatado con la maquina 😆")
-        }else if((player == 1 && machine == 3) || (player == 2 && machine == 1) || (player == 3 && machine == 2)){
+        } else if((player == 1 && machine == 3) || (player == 2 && machine == 1) || (player == 3 && machine == 2)){
             alert("Ganaste wachin 😲")
-        }else{
+        } else{
             alert("Perdiste wachin 😞")
         }
         </script>
