@@ -7,24 +7,24 @@
         <meta charset="utf-8">
         <script>
         //Declaracion de las 4 variables más importantes y la funcion de numeros aleatorios y la funcion de la jugada
-            function random(min, max){
-                return Math.floor(Math.random()*(max-min+1)+min)
+        function random(min, max){
+            let min = 0;
+            let max = 0;
+            return Math.floor(Math.random()*(max-min+1)+min)
+        }
+        function choise(game){
+            let result = ""
+            if(game == 1){
+                result = "✂️"; 
+            } else if(game == 2){
+                result = "🪨";
+            } else if(game == 3){
+                result = "📄";
+            } else{
+                result ="No selecciono nada, No se puede jugar ❌"
             }
-            function choise(game){
-                let result = ""
-                if(game == 1){
-                    result = "✂️"; 
-                } else if(game == 2){
-                    result = "🪨";
-                } else if(game == 3){
-                    result = "📄";
-                } else{
-                    result ="No selecciono nada, No se puede jugar ❌"
-                }
-                return result
-            }
-        let min = 0;
-        let max = 0;
+            return result
+        }
         let player = 0;
         let machine = random(1,3);
         //Bienvenida del jugardor y eleccion del mismo
