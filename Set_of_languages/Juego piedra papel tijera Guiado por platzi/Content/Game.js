@@ -1,8 +1,8 @@
         //Declaramos las variables para utilizar el juego
         //Usuario
         let player = 0;
-        let win = 0;
-        let lose = 0;
+        let player_win = 0;
+        let player_lose = 0;
     //Maquina
         let machine = 0;
         let min = 0;
@@ -46,19 +46,19 @@
                 alert("Haz empatado con la maquina 😆")
             }else if((player == 1 && machine == 3) || (player == 2 && machine == 1) || (player == 3 && machine == 2)){
                 alert("Ganaste wachin 😲")
-                win = win+1
+                player_win = player_win+1
             } 
             else{
                 alert("Perdiste wachin 😞")
-                lose = lose + 1
+                player_lose = player_lose + 1
             }
             
             count_round = count_round+1
-            alert("Ganaste:" + win + " Perdiste:" + lose)
+            alert("Ganaste:" + player_win + " Perdiste:" + player_lose)
         }
-        if(win>lose){
+        if(player_win>player_lose){
             alert("Ganador supremo 🌟")
-        }else if(win == lose){
+        }else if(player_win == player_lose){
             alert("Empate 😂")
         }
         else{
