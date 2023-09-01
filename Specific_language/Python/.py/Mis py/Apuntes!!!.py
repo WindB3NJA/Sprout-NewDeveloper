@@ -1,5 +1,6 @@
-#esto no se interpreta sino que es un mensaje
+# esto no se interpreta sino que es un mensaje
 
+import random
 from setuptools import sic
 
 
@@ -54,93 +55,95 @@ respuesta = numero7 + numero8
 respuesta = str(respuesta)
 print("la sumas de 7 mas 8 = " + respuesta)
 
-#como ver que tipo de informacion
+# como ver que tipo de informacion
 print(type("hello word"))
 
 
+# que es un boolean o bulenao es para definir tipos de estado
+True  # si o prendido
+False  # no o apagado
 
-#que es un boolean o bulenao es para definir tipos de estado
-True #si o prendido
-False #no o apagado
+# como hacer una lista(list) esto es para agurupar numero o info pero ser puede cambiar
+[30, 120, 210, 40]
+["hola", "si", "no", "gracias"]
+[numero8, 10.2, "hola", 10]
 
-#como hacer una lista(list) esto es para agurupar numero o info pero ser puede cambiar
-[30,120,210,40]
-["hola","si","no","gracias"]
-[numero8,10.2,"hola",10]
-
-#que es una tupla(tuples) es una lista que no se puede cambiar es casi lo mismo de arriba
-(30,120,210,40)
-("hola","si","no","gracias")
-(numero8,10.2,"hola",10)
+# que es una tupla(tuples) es una lista que no se puede cambiar es casi lo mismo de arriba
+(30, 120, 210, 40)
+("hola", "si", "no", "gracias")
+(numero8, 10.2, "hola", 10)
 
 # dicionarios es una forma de darle un lenguaje a python
-{   #key    #valor
-    "name":"benjamin",
-    "lastname":"benja",
-    "nickname":"ben"
+{  # key    #valor
+    "name": "benjamin",
+    "lastname": "benja",
+    "nickname": "ben"
 }
-#que es none es nada es para decir que no hay nada
+# que es none es nada es para decir que no hay nada
 None
 
-#variables (las mayusculas con importantes)
+# variables (las mayusculas con importantes)
 numero1 = 1
 mi_nombre = "mi nombre"
-_dos = 2 
+_dos = 2
 
-#para leguaje de programacion mas complicados se debe usar todas las palabras en mayusculas para definir una variable de no puede cambiar
+# para leguaje de programacion mas complicados se debe usar todas las palabras en mayusculas para definir una variable de no puede cambiar
 POU = "medio juego"
 print(POU)
-#python es un lenguaje dinamico por lo cual 
+# python es un lenguaje dinamico por lo cual
 pou = 1
 print(pou)
-#pero ahora quiero cambiar el valor de pou es
+# pero ahora quiero cambiar el valor de pou es
 pou = 2
 print(pou)
-#en conclucion las variables se pueden cambiar entre mas vallas bajando
+# en conclucion las variables se pueden cambiar entre mas vallas bajando
 
-#Observaciones
-#si hay un error en la mitad de la pagina lo que falta no se ejecuta
+# Observaciones
+# si hay un error en la mitad de la pagina lo que falta no se ejecuta
 
-#rango 
+# rango
 for val in range(10):
     print(val+1)
     print("hola")
-#le estamos dicendo que en 10 casillas repita lo que tiene abajo usando : para dejarlo encadenado abajo
+# le estamos dicendo que en 10 casillas repita lo que tiene abajo usando : para dejarlo encadenado abajo
 
-#importamos random para usar random.choice
-import random
-opcion = ["si","no"]
+# importamos random para usar random.choice
+opcion = ["si", "no"]
 for val in range(10):
- print(random.choice(opcion))
-#este codigo hace tomar una opcion random definiendola 
+    print(random.choice(opcion))
+# este codigo hace tomar una opcion random definiendola
 
-#exite algo llamado class que calasifica una nombre o cosa donde dentro de este se pueden definir varibables 
+# exite algo llamado class que calasifica una nombre o cosa donde dentro de este se pueden definir funciones
+
+
 class humano:
- saludar = "Hola"
- despedirce = "chao"
+    saludar = "Hola"
+    despedirce = "chao"
+
+
 print(humano.saludar)
-#tambien podemos asignar variables que actuen de esa forma 
-print =  humano
+# tambien podemos asignar variables que actuen de esa forma
+print = humano
 print(print.saludar)
-#ademas remplazar aciones mediante el codigo avanze
+# ademas remplazar aciones mediante el codigo avanze
 english_human = humano
 english_human.saludar = "hello"
 english_human.despedirce = "bye"
-#y es asi como podemos reemplazar lo que hace
-#class calculator:
+# y es asi como podemos reemplazar lo que hace
+# class calculator:
 #    def .div(a,c):
 #        return a/c
 
-#print(int(calculator.div(70,7)))
-#tambien podemos hacer operaciones matematicas con esto definiendo funciones
-# luego devolverlas 
-#para que luego imprima lo que buscas en el mismo orden
+# print(int(calculator.div(70,7)))
+# tambien podemos hacer operaciones matematicas con esto definiendo funciones
+# luego devolverlas
+# para que luego imprima lo que buscas en el mismo orden
 
-#--type()
-#es una forma de ver que son las varibles
+# --type()
+# es una forma de ver que son las varibles
 
-#si tengo una lista tambien podria ver cuantas cosas tengo en ella
-lista = [10,32,123,56,866]
-print(max(lista)) #busca el valor maximo de la lista   
-print(min(lista)) #agarra el minimo de una lista
-print(len(lista)) #dice la cantidad de elementos que hay en una lista
+# si tengo una lista tambien podria ver cuantas cosas tengo en ella
+lista = [10, 32, 123, 56, 866]
+print(max(lista))  # busca el valor maximo de la lista
+print(min(lista))  # agarra el minimo de una lista
+print(len(lista))  # dice la cantidad de elementos que hay en una lista
