@@ -14,39 +14,39 @@
         </section>
         
     
-        <section id ="player-Mokepon-choise" >
+        <section id ="player-Mokepon-choise">
             <h2>¡Elige a Tú Mokepon!</h2>
-            
-            <label for="Radinten"><img src="../Mokepon/content/images/Radinten.png"><label for="Radinten">🔥Raditen</label></label>
-            <input type="radio" name="Mokepon" id="Radinten"/>
-            
-            <label for="Mizutana"><img src="../Mokepon/content/images/Mizutana.png"><label for="Mizutana">💧Mizutana</label></label>
-            <input type="radio" name="Mokepon" id="Mizutana"/>
-            
-            <label for="Hanize"><img src="../Mokepon/content/images/Hanize.png"><label for="Hanize">🌱Hanize</label></label>
-            <input type="radio" name="Mokepon" id="Hanize"/>
-            
-            <!--label for="Mizuhi">Mizuhi</!--label>
-            <!--input type="radio" name="Mokepon" id="Mizuhi"/>
-            
-            <!--label for="Hazu">Hazu</!--label>
-            <!--input type="radio" name="Mokepon" id="Hazu"/>
-            
-            <!--label for="Hahine">Hahine</!--label>
-            <!--input type="radio" name="Mokepon" id="Hahine"/>
-            
-            <!--Mokepones: Radinten -> Fuego,Mizutana -> Agua,Hanize -> Planta, Mizuhi -> Agua y Fuego, Hazu -> Agua y Planta, Hahine -> Planta y Fuego-->
-            
+            <section id="Mokepones">
+                <label for="Radinten"><img src="content/images/Radinten.png"><label for="Radinten">🔥Raditen</label></label>
+                <input type="radio" name="Mokepon" id="Radinten"/>
+                
+                <label for="Mizutana"><img src="content/images/Mizutana.png"><label for="Mizutana">💧Mizutana</label></label>
+                <input type="radio" name="Mokepon" id="Mizutana"/>
+                
+                <label for="Hanize"><img src="content/images/Hanize.png"><label for="Hanize">🌱Hanize</label></label>
+                <input type="radio" name="Mokepon" id="Hanize"/>
+                
+                <!--label for="Mizuhi">Mizuhi</!--label>
+                <!--input type="radio" name="Mokepon" id="Mizuhi"/>
+                
+                <!--label for="Hazu">Hazu</!--label>
+                <!--input type="radio" name="Mokepon" id="Hazu"/>
+                
+                <!--label for="Hahine">Hahine</!--label>
+                <!--input type="radio" name="Mokepon" id="Hahine"/>
+                
+                <!--Mokepones: Radinten -> Fuego,Mizutana -> Agua,Hanize -> Planta, Mizuhi -> Agua y Fuego, Hazu -> Agua y Planta, Hahine -> Planta y Fuego-->    
+            </section>
 
             <button id="button-select-mokepon">Confirmar</button>
         </section>
     
         <section id ="player-atack-choise">   
             <h2>¡Elige Tú Ataque!</h2>
-            <p>Tu Mokepon tiene <span id="player-mokepon">Mokepon_name</span> 3 </span> Puntos de energia vital</p>     
-            <p>El Mokepon del contricante es de <span id="rival-mokepon">3</span> puntos de energia vital</p>
+            <p id="playerStatus">Tu Mokepon <span id="player-mokepon-name">player_Mokepon_name</span> tiene <span> 3 </span> Puntos de energia vital</p>     
+            <p id="rivalStatus">El Mokepon <span id="rival-mokepon-name">rival_Mokepon_Name</span> del contricante es de <span>3</span> puntos de energia vital</p>
             
-            <p>
+            <p id="playerButtonFight">
                 <button id="button-fire">Fuego 🔥</button>
                 <button id="button-water">Agua 💧</button>
                 <button id="button-plant">Planta 🌱</button>
