@@ -1,5 +1,7 @@
 let playerAtack
+let playerBattleLife = 3 ;
 let rivalAtack
+let rivalBattleLife = 3 ;
 //se Incializa el JavaScript con una funcion que espera al usuario que apriente una opcion para disparar el juego
 function gameLoading() {
     let buttonSelectMokepon = document.getElementById("button-select-mokepon") ;
@@ -34,6 +36,10 @@ function num_random(min,max){
 }
 //Selecion del jugaro a la criatura llamada mokepon
 function PlayerChoise() {
+    //Reinicio de vidas
+    playerBattleLife = 3 ;
+    rivalBattleLife = 3 ;
+    //elecion del Mokepon
     let choiseRaditen = document.getElementById("Radinten") ;
     let choiseMizutana = document.getElementById("Mizutana") ;
     let choiseHanize = document.getElementById("Hanize") ;
@@ -88,29 +94,34 @@ function gameBattleStatus(){
     if (playerAtack == rivalAtack) {
         gameBattleResults = "¡Un empate de Elementos! 😲"
     } else if (playerAtack == "Fuego 🔥" && rivalAtack == "Agua 💧") {
-        gameBattleResults = "Te Han apagado 😰, ¡Haz perdido esta ronda!"
-        //playerBattleLife = playerBattleLife - 1
+        gameBattleResults = "Te han apagado 😰, ¡Haz Perdido esta ronda!"
+        playerBattleLife--
     } else if (playerAtack == "Agua 💧" && rivalAtack == "Planta 🌱") {
-        gameBattleResults = "Te Han Absorido para sus nutrientes 🚱, ¡Haz perdido esta ronda!"
-        //playerBattleLife = playerBattleLife - 1
+        gameBattleResults = "Te han absorido para sus nutrientes 🚱, ¡Haz Perdido esta ronda!"
+        playerBattleLife--
     } else if (playerAtack == "Planta 🌱" && rivalAtack == "Fuego 🔥") {
-        gameBattleResults = "Te Han Chamuscado 🥵, ¡Haz perdido esta ronda!"
-        //playerBattleLife = playerBattleLife - 1
+        gameBattleResults = "Te han chamuscado 🥵, ¡Haz Perdido esta ronda!"
+        playerBattleLife--
     } else if (playerAtack == "Agua 💧" && rivalAtack == "Fuego 🔥") {
         gameBattleResults = "Apagaste el incendio 💦, ¡Haz Ganado esta ronda!"
-        //rivalBattleLife = rivalBattleLife - 1
+        rivalBattleLife--
     } else if (playerAtack == "Planta 🌱" && rivalAtack == "Agua 💧") {
         gameBattleResults = "Que sediento estabas 🤤, ¡Haz Ganado esta ronda!"
-        //rivalBattleLife = rivalBattleLife - 1
+        rivalBattleLife--
     } else if (playerAtack == "Fuego 🔥" && rivalAtack == "Planta 🌱") {
         gameBattleResults = "Leña para el asado 🔥, ¡Haz Ganado esta ronda!"
-        //rivalBattleLife = rivalBattleLife - 1
+        rivalBattleLife--
     } 
 
-    let gameMessageAtack  = document.getElementById("messages")
+    let gameMessageAtack  = document.getElementById("messages");
     let BattleString = document.createElement("p");
     BattleString.innerHTML = "Tú mascota Ataco con "+ playerAtack +", La mascota del Rival Ataco con "+ rivalAtack +" - "+ gameBattleResults
     gameMessageAtack.appendChild(BattleString);
+    //Sistema de vidas 
+    let playerStringLife = document.getElementById("player-life");
+    playerStringLife.innerHTML = playerBattleLife
+    let rivalStringLife = document.getElementById("rival-life");
+    rivalStringLife.innerHTML = rivalBattleLife
 }
 //Se espera a que la pagina carge para luego correr el JavaScript
 window.addEventListener("load", gameLoading)
