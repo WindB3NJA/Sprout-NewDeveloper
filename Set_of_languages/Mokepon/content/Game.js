@@ -6,6 +6,15 @@ let rivalAtack
 let rivalBattleLife = 3 ;
 //se Incializa el JavaScript con una funcion que espera al usuario que apriente una opcion para disparar el juego
 function gameLoading() {
+    //Mostrar las secciones del juego
+    let displayChoiseAtack = document.getElementById("player-atack-choise")
+    displayChoiseAtack.style.display = "none"
+    let displayBattleMessages = document.getElementById("battle-messages")
+    displayBattleMessages.style.display = "none"
+    let displayBattleResults = document.getElementById("battle-Results")
+    displayBattleResults.style.display = "none"
+    let displayRestart = document.getElementById("button-restart")
+    displayRestart.style.display = "none"
     //Boton para verificar si el usuario al haber tocado ya click en mokepon y al boton de confirmar seleccione el mokepon
     let buttonSelectMokepon = document.getElementById("button-select-mokepon") ;
     buttonSelectMokepon.addEventListener("click", PlayerChoise)
@@ -21,11 +30,11 @@ function gameLoading() {
     gameButtonRestart.addEventListener("click", gameRestart)
 }
 //Funcion para reiniciar el juego
-function gameRestart(){
+function gameRestart() {
     location.reload()
 }
 //Generador de numeros aleatorios
-function num_random(min,max){
+function num_random(min,max) {
     return Math.floor(Math.random()*(max-min+1)+min)
 }
 //Selecion del jugaro a la criatura llamada mokepon
@@ -55,6 +64,13 @@ function PlayerChoise() {
     } else {
         alert("Seleccione un Mokepon Porfavor")
     }
+    //Mostrar en pantalla la siguiente seccion
+    let displayPlayerChoise = document.getElementById("player-Mokepon-choise")
+    displayPlayerChoise.style.display = "none"
+    let displayChoiseAtack = document.getElementById("player-atack-choise")
+    displayChoiseAtack.style.display = "block"
+    let displayBattleMessages = document.getElementById("battle-messages")
+    displayBattleMessages.style.display = "block"
     //Eleccion de el rival
     rivalMokeponChoise()
 }
@@ -136,6 +152,10 @@ function gameMesaggeStatus() {
     let rivalStringLife = document.getElementById("rival-life");
     //Comparador de vidas y mensajes
     if(playerBattleLife == 0 || rivalBattleLife == 0) {
+        let displayBattleResults = document.getElementById("battle-Results")
+        displayBattleResults.style.display = "block"
+        let displayRestart = document.getElementById("button-restart")
+        displayRestart.style.display = "block"
         playerStringLife.innerHTML = playerBattleLife
         rivalStringLife.innerHTML = rivalBattleLife
         gameBattleFinalResults()
@@ -146,7 +166,7 @@ function gameMesaggeStatus() {
 
 }
 //Desactivador de botones de ataque
-function buttonDisableAtack(){
+function buttonDisableAtack() {
     let playerButtonFire = document.getElementById("button-fire") ;
     playerButtonFire.disabled = true
     let playerButtonWater = document.getElementById("button-water") ;

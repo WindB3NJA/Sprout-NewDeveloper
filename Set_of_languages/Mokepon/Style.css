@@ -1,3 +1,13 @@
 body {
-    background-image: url(content/images/Wallpaper.jpg);
+    background-color: #2A363B;
+}
+h1 {
+    color: #99B898;
+    size: 100cqmax;
+}
+h2{
+    color: #FECEA8;
+}
+P {
+    color:#FF847C;
 }
