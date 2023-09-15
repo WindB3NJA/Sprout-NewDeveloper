@@ -50,6 +50,9 @@ function PlayerChoise() {
     let choiseRaditen = document.getElementById("Radinten") ;
     let choiseMizutana = document.getElementById("Mizutana") ;
     let choiseHanize = document.getElementById("Hanize") ;
+    let choiseMizuhi = document.getElementById("Mizuhi") ;
+    let choiseHazu = document.getElementById("Hazu") ;
+    let choiseHanine = document.getElementById("Hahine") ;
     let PlayerMokepon = document.getElementById("player-mokepon-name") ;
 
     if (choiseRaditen.checked) {
@@ -61,6 +64,15 @@ function PlayerChoise() {
     } else if (choiseHanize.checked) {
         PlayerMokepon.innerHTML = "🌱Hanize"
         alert("Haz seleccionado a 🌱Hanize")
+    } else if (choiseMizuhi.checked) {
+        PlayerMokepon.innerHTML = "💧🔥Mizuhi"
+        alert("Haz seleccionado a 💧🔥Mizuhi")
+    } else if (choiseHazu.checked) {
+        PlayerMokepon.innerHTML = "💧🌱Hazu"
+        alert("Haz seleccionado a 💧🌱Hazu")
+    } else if (choiseHanine.checked) {
+        PlayerMokepon.innerHTML = "🌱🔥Hahine"
+        alert("Haz seleccionado a 🌱🔥Hahine")
     } else {
         alert("Seleccione un Mokepon Porfavor")
     }
@@ -76,7 +88,7 @@ function PlayerChoise() {
 }
 //Desicion de la maquina para elegir que a la criatura mokepon que utliza se ejecuta despues de 
 function rivalMokeponChoise() {
-    let rivalMokeponChoise = num_random(1,3) ;
+    let rivalMokeponChoise = num_random(1,6) ;
     let RivalMokepon = document.getElementById("rival-mokepon-name") ;
 
     if (rivalMokeponChoise == 1) {
@@ -88,6 +100,15 @@ function rivalMokeponChoise() {
     } else if (rivalMokeponChoise == 3) {
         RivalMokepon.innerHTML = "🌱Hanize"
         alert("Tú rival ha seleccionado a 🌱Hanize")
+    } else if (rivalMokeponChoise == 4) {
+        RivalMokepon.innerHTML = "💧🔥Mizuhi"
+        alert("Tú rival ha seleccionado a 💧🔥Mizuhi")
+    } else if (rivalMokeponChoise == 5) {
+        RivalMokepon.innerHTML = "💧🌱Hazu"
+        alert("Tú rival ha seleccionado a 💧🌱Hazu")
+    } else if (rivalMokeponChoise == 6) {
+        RivalMokepon.innerHTML = "🌱🔥Hahine"
+        alert("Tú rival ha seleccionado a 🌱🔥Hahine")
     }
 }
 //Botones de ataque del jugador

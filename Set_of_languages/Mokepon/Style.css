@@ -1,13 +1,16 @@
 body {
-    background-color: #2A363B;
+    background-color: #EEEEEE;
 }
 h1 {
-    color: #99B898;
-    size: 100cqmax;
+    color: #053B50;
 }
 h2{
-    color: #FECEA8;
+    color: #176B87;
 }
 P {
-    color:#FF847C;
+    color: #64CCC5;
+}
+img {
+    width: 250px;
+    height: 250px;
 }
