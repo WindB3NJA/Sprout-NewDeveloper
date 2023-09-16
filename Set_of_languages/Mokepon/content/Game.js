@@ -39,13 +39,8 @@ function num_random(min,max) {
 }
 //Selecion del jugaro a la criatura llamada mokepon
 function PlayerChoise() {
-    //Reinicio de vidas
-    let playerStringLife = document.getElementById("player-life");
-    let rivalStringLife = document.getElementById("rival-life");
-    playerBattleLife = 3 ;
-    playerStringLife.innerHTML = playerBattleLife ;
-    rivalBattleLife = 3 ;
-    rivalStringLife.innerHTML = rivalBattleLife ;
+    //Imagenes de los mokepones
+    let PlayerMokeponImage = document.createElement("img");
     //elecion del Mokepon
     let choiseRaditen = document.getElementById("Radinten") ;
     let choiseMizutana = document.getElementById("Mizutana") ;
@@ -58,23 +53,36 @@ function PlayerChoise() {
     if (choiseRaditen.checked) {
         PlayerMokepon.innerHTML = "🔥Raditen"
         alert("Haz seleccionado a 🔥Raditen")
+        PlayerMokeponImage.src ="content/images/Mokepons/Radinten.png"
+        document.getElementById("image-player-mokepon").appendChild(PlayerMokeponImage);
     } else if (choiseMizutana.checked) {
         PlayerMokepon.innerHTML = "💧Mizutana"
         alert("Haz seleccionado a 💧Mizutana")
+        PlayerMokeponImage.src ="content/images/Mokepons/Mizutana.png"
+        document.getElementById("image-player-mokepon").appendChild(PlayerMokeponImage);
     } else if (choiseHanize.checked) {
         PlayerMokepon.innerHTML = "🌱Hanize"
         alert("Haz seleccionado a 🌱Hanize")
+        PlayerMokeponImage.src ="content/images/Mokepons/Hanize.png"
+        document.getElementById("image-player-mokepon").appendChild(PlayerMokeponImage);
     } else if (choiseMizuhi.checked) {
         PlayerMokepon.innerHTML = "💧🔥Mizuhi"
         alert("Haz seleccionado a 💧🔥Mizuhi")
+        PlayerMokeponImage.src ="content/images/Mokepons/Mizuhi.png"
+        document.getElementById("image-player-mokepon").appendChild(PlayerMokeponImage);
     } else if (choiseHazu.checked) {
         PlayerMokepon.innerHTML = "💧🌱Hazu"
         alert("Haz seleccionado a 💧🌱Hazu")
+        PlayerMokeponImage.src ="content/images/Mokepons/Hazu.png"
+        document.getElementById("image-player-mokepon").appendChild(PlayerMokeponImage);
     } else if (choiseHanine.checked) {
         PlayerMokepon.innerHTML = "🌱🔥Hahine"
         alert("Haz seleccionado a 🌱🔥Hahine")
+        PlayerMokeponImage.src ="content/images/Mokepons/Hahine.png"
+        document.getElementById("image-player-mokepon").appendChild(PlayerMokeponImage);
     } else {
         alert("Seleccione un Mokepon Porfavor")
+        gameRestart()
     }
     //Mostrar en pantalla la siguiente seccion
     let displayPlayerChoise = document.getElementById("player-Mokepon-choise")
@@ -88,27 +96,40 @@ function PlayerChoise() {
 }
 //Desicion de la maquina para elegir que a la criatura mokepon que utliza se ejecuta despues de 
 function rivalMokeponChoise() {
+    let RivalMokeponImage = document.createElement("img");
     let rivalMokeponChoise = num_random(1,6) ;
     let RivalMokepon = document.getElementById("rival-mokepon-name") ;
 
     if (rivalMokeponChoise == 1) {
         RivalMokepon.innerHTML = "🔥Raditen"
         alert("Tú rival ha seleccionado a 🔥Raditen")
+        RivalMokeponImage.src ="content/images/Mokepons/Radinten.png"
+        document.getElementById("image-rival-mokepon").appendChild(RivalMokeponImage);
     } else if (rivalMokeponChoise == 2) {
         RivalMokepon.innerHTML = "💧Mizutana"
         alert("Tú rival ha seleccionado a 💧Mizutana")
+        RivalMokeponImage.src ="content/images/Mokepons/Mizutana.png"
+        document.getElementById("image-rival-mokepon").appendChild(RivalMokeponImage);
     } else if (rivalMokeponChoise == 3) {
         RivalMokepon.innerHTML = "🌱Hanize"
         alert("Tú rival ha seleccionado a 🌱Hanize")
+        RivalMokeponImage.src ="content/images/Mokepons/Hanize.png"
+        document.getElementById("image-rival-mokepon").appendChild(RivalMokeponImage);
     } else if (rivalMokeponChoise == 4) {
         RivalMokepon.innerHTML = "💧🔥Mizuhi"
         alert("Tú rival ha seleccionado a 💧🔥Mizuhi")
+        RivalMokeponImage.src ="content/images/Mokepons/Mizuhi.png"
+        document.getElementById("image-rival-mokepon").appendChild(RivalMokeponImage);
     } else if (rivalMokeponChoise == 5) {
         RivalMokepon.innerHTML = "💧🌱Hazu"
         alert("Tú rival ha seleccionado a 💧🌱Hazu")
+        RivalMokeponImage.src ="content/images/Mokepons/Hazu.png"
+        document.getElementById("image-rival-mokepon").appendChild(RivalMokeponImage);
     } else if (rivalMokeponChoise == 6) {
         RivalMokepon.innerHTML = "🌱🔥Hahine"
         alert("Tú rival ha seleccionado a 🌱🔥Hahine")
+        RivalMokeponImage.src ="content/images/Mokepons/Hahine.png"
+        document.getElementById("image-rival-mokepon").appendChild(RivalMokeponImage);
     }
 }
 //Botones de ataque del jugador

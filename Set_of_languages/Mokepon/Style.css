@@ -1,14 +1,26 @@
 body {
+    margin: auto;
+    width: 860px; 
+    padding: 50px;
+    font-family: 'Arial', sans-serif; 
+    color: #33475b; 
     background-color: #EEEEEE;
 }
 h1 {
     color: #053B50;
+    
 }
 h2{
-    color: #176B87;
+    color: #053B50;
+}
+h4{
+    color: #053B50;
 }
 P {
-    color: #64CCC5;
+    color: #176B87;
+}
+button {
+    color: #176B87;
 }
 img {
     width: 250px;
