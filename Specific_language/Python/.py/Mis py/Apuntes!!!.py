@@ -5,8 +5,8 @@ from setuptools import sic
 
 
 print("numeros de el mensaje que no encontro")
-mensa2 = ("quenumerosds")
-mensa = ("losnumerosquebuscassonestos")
+mensa2 = "quenumerosds"
+mensa = "losnumerosquebuscassonestos"
 losnumeros = mensa.find("busca")
 print(losnumeros)
 

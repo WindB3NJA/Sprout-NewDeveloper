@@ -1,5 +1,3 @@
-from audioop import reverse
-
 
 list_all = [1, 0.1, "diez", True]
 print(list_all)
@@ -21,10 +19,10 @@ print(9 in rango)
 list_all[1] = 1083
 print(print)
 # para agregar una cosa a la lista
-print.append("tu mama")
+print.append("Cosa")
 print(print)
 # si quieres agregar {} dentro de() a los elementos y cambiar el .append por .extend
-print.extend(["tu mama", 9, 23, "eleprint"])
+print.extend(["Cosa entre medio", 9, 23, "eleprint"])
 print(print)
 # si quieres agregar una cosa en un lugar determinado lo pudes hacer con .insert
 print.insert(0, "el primero")
