@@ -6,26 +6,37 @@ body {
     color: #33475b; 
     background-color: #EEEEEE;
 }
+
 h1 {
     color: #053B50;
-    
+    width: 301px;
+    height: 50px;
+    background-color: #EEEEEE;
 }
-h2{
+
+h2 {
     color: #053B50;
 }
-h4{
+
+h4 {
     color: #053B50;
 }
+
 P {
     color: #176B87;
 }
+
+label {
+    color: #176B87;
+    display: inline-block;
+}
+
 button {
     color: #176B87;
 }
+
 img {
     width: 250px;
     height: 250px;
 }
-label{
-    color: #176B87;
-}
+
