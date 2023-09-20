@@ -11,7 +11,6 @@ h1 {
     color: #053B50;
     width: 301px;
     height: 50px;
-    background-color: #EEEEEE;
 }
 
 h2 {
@@ -27,16 +26,26 @@ P {
 }
 
 label {
+    background-color: #b3cee9;
     color: #176B87;
-    display: inline-block;
+    width: 310px;
+    height: 50px;
 }
 
-button {
+#button-select-mokepon {
+    background-color: #b3cee9;
     color: #176B87;
+    width: 310px;
+    height: 50px;
 }
 
-img {
-    width: 250px;
-    height: 250px;
+input {
+    background-color: #306275;
+    width: 310px;
+    height: 50px;
 }
 
+img{
+    width: 16px;
+    height: 16px;
+}
