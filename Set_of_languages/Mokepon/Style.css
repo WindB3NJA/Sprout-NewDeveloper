@@ -1,23 +1,13 @@
 body {
     margin: auto;
-    width: 860px; 
-    padding: 50px;
+    width: 420px; 
+    padding: 25px;
     font-family: 'Arial', sans-serif; 
     color: #33475b; 
     background-color: #EEEEEE;
 }
 
-h1 {
-    color: #053B50;
-    width: 301px;
-    height: 50px;
-}
-
-h2 {
-    color: #053B50;
-}
-
-h4 {
+h1, h2, h3, h4, h5, h6 {
     color: #053B50;
 }
 
@@ -28,8 +18,36 @@ P {
 label {
     background-color: #b3cee9;
     color: #176B87;
-    width: 310px;
+    width: 52px;
     height: 50px;
+}
+
+input {
+    width: 52px;
+    height: 52px;
+}
+
+#Landing-Page{
+    display: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: #b3cee9;
+    width: 420px;
+}
+
+#Mokepones{
+    width: 52px;
+    height: 52px;
+    display: fle;
+    flex-direction: column;
+}
+
+img{
+    width: 52px;
+    height: 52px;
+    display: flex;
 }
 
 #button-select-mokepon {
@@ -39,13 +57,21 @@ label {
     height: 50px;
 }
 
-input {
-    background-color: #306275;
-    width: 310px;
-    height: 50px;
+#battle-images{
+    width: 52px;
+    height: 52px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: flex;
 }
 
-img{
-    width: 16px;
-    height: 16px;
+#battle-messages{
+    display: center;
+}
+
+#button-restart {
+    background-color: #b3cee9;
+    color: #176B87;
+    width: 310px;
+    height: 50px;
 }
