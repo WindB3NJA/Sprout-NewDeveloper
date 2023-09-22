@@ -3,23 +3,33 @@ body {
     width: 420px; 
     padding: 25px;
     font-family: 'Arial', sans-serif; 
-    color: #33475b; 
-    background-color: #EEEEEE;
+    color: #FAF1E4; 
+    background-color: #FAF1E4;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    color: #053B50;
+h1 {
+    color: #435334;
+    margin: auto;
+    text-align: center;
+} 
+h2, h3, h4, h5, h6 {
+    color: #435334;
+    margin: auto;
+    text-align: center;
 }
 
 P {
-    color: #176B87;
+    color: #9EB384;
+    margin: auto;
+    text-align: center;
 }
 
 label {
-    background-color: #b3cee9;
     color: #176B87;
     width: 52px;
     height: 50px;
+    margin: auto;
+    text-align: center;
 }
 
 input {
@@ -27,34 +37,56 @@ input {
     height: 52px;
 }
 
-#Landing-Page{
+img {
+    width: 52px;
+    height: 52px;
+    display: flex;
+    margin: auto;
+    text-align: center;
+}
+
+#Landing-Page {
     display: center;
+    margin-bottom: 10px;
+    width: 420px;
+    border-color: #CEDEBD;
+    border-radius: 20%;
+}
+
+#player-Mokepon-choise {
     margin-top: 10px;
     margin-bottom: 10px;
     margin-right: 10px;
     margin-left: 10px;
-    background-color: #b3cee9;
-    width: 420px;
 }
 
-#Mokepones{
+#Mokepones {
     width: 52px;
     height: 52px;
-    display: fle;
-    flex-direction: column;
-}
-
-img{
-    width: 52px;
-    height: 52px;
+    margin-bottom: 120px;
+    text-align: center;
     display: flex;
 }
 
 #button-select-mokepon {
-    background-color: #b3cee9;
-    color: #176B87;
+    display: center;
+    background-color: #CEDEBD;
+    color: #435334;
     width: 310px;
     height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin: auto;
+    text-align: center;
+}
+
+#player-atack-choise {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 #battle-images{
@@ -63,15 +95,33 @@ img{
     margin-right: 10px;
     margin-left: 10px;
     display: flex;
+    text-align: center;
 }
 
-#battle-messages{
+#battle-messages {
     display: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#battle-Results {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
 }
 
 #button-restart {
-    background-color: #b3cee9;
-    color: #176B87;
+    display: center;
+    background-color: #CEDEBD;
+    color: #435334;
     width: 310px;
     height: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin: auto;
+    text-align: center;
 }
