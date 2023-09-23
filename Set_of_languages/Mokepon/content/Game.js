@@ -26,7 +26,7 @@ function gameLoading() {
     let playerButtonPlant = document.getElementById("button-plant") ;
     playerButtonPlant.addEventListener("click", PlayerButtonPlant)
     //Reiniciar el juego
-    let gameButtonRestart = document.getElementById("restart")
+    let gameButtonRestart = document.getElementById("button-restart")
     gameButtonRestart.addEventListener("click", gameRestart)
 }
 //Funcion para reiniciar el juego
