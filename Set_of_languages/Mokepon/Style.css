@@ -1,11 +1,11 @@
-body {
+body{
     color: #435334;
     background-color: #FAF1E4;
     margin: auto;
-    text-align: center;
-    width: 520px; 
+    text-align: center; 
+    width: 520px;
     padding: 25px;
-    font-family: 'Arial', sans-serif; 
+    font-family: 'Arial', sans-serif;
 }
 
 #Landing-Page{
@@ -14,30 +14,75 @@ body {
 
 #player-Mokepon-choise{
     margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
 }
-
-img {
-    display: flexbox;
-    margin: auto;
-    text-align: center;
+.image > img {
     width: 52px;
     height: 52px;
-    flex-wrap: nowrap;
+}
+.Mokepon-card{
+    background-color: #CEDEBD;
+    display: inline-block;
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    box-sizing: border-box;
+    border-radius: 60%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+input {
+    text-align: center;
     align-items: center;
+    height: auto;
+    width: auto;
+}
+.Mokepon-card img{
+    display: flexbox;
+    flex-direction: row;
+    height: auto;
+    width: auto;
 }
 
-.user-button {
+.Mokepon-card label {
+    margin-top: 10px;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+  }
+#image-player-mokepon{
+    margin-left: 25px;
+    display: flex;
+    flex-direction: row;
+}
+#image-player-mokepon > h3{
+    transform: rotate(-10deg);
+}
+#image-player-mokepon > img{
+    transform: scaleX(-1);
+}
+
+#image-rival-mokepon{
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+#image-rival-mokepon > h3{
+    transform: rotate(10deg);
+}
+#image-rival-mokepon > img{
+    transform: scaleX(1);
+}
+
+#Mokepones{
+    margin-bottom: 10px;
+}
+
+.user-button{
     background-color: #CEDEBD;
     color: #435334;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin: auto;
     text-align: center;
     width: 310px;
     height: 50px;
-
 }

@@ -14,31 +14,41 @@
         </section>    
     <div id ="player-Mokepon-choise">
         <h2 class="sub-title">¡Elige a Tú Mokepon!</h2>
-        <section id="Mokepones">
-                <label for="Radinten"><img src="content/images/Mokepons/Radinten.png" class ="image"><label for="Radinten">🔥Raditen</label><input type="radio" name="Mokepon" id="Radinten"/></label>
+        <div class="Mokepones">
+                <section class="Mokepon-card"><label for="Radinten"><img src="content/images/Mokepons/Radinten.png" class ="image"><label for="Radinten">🔥Raditen</label></label></section>
+                <input type="radio" name="Mokepon" id="Radinten"/>
                 
-                <label for="Mizutana"><img src="content/images/Mokepons/Mizutana.png" class ="image"><label for="Mizutana">💧Mizutana</label><input type="radio" name="Mokepon" id="Mizutana"/></label>
-                
-                <label for="Hanize"><img src="content/images/Mokepons/Hanize.png" class ="image"><label for="Hanize">🌱Hanize</label><input type="radio" name="Mokepon" id="Hanize"/></label>
-                
-                <label for="Mizuhi"><img src="content/images/Mokepons/Mizuhi.png" class ="image"><label for="Mizuhi">💧🔥Mizuhi</label><input type="radio" name="Mokepon" id="Mizuhi"/></label>
+                <section class="Mokepon-card"><label for="Mizutana"class="Mokepon-card"><img src="content/images/Mokepons/Mizutana.png" class ="image"><label for="Mizutana">💧Mizutana</label></label></section>
+                <input type="radio" name="Mokepon" id="Mizutana"/>
 
-                <label for="Hazu"><img src="content/images/Mokepons/Hazu.png" class ="image"><label for="Hazu">💧🌱Hazu</label><input type="radio" name="Mokepon" id="Hazu"/></label>
+                <section class="Mokepon-card"><label for="Hanize"class="Mokepon-card"><img src="content/images/Mokepons/Hanize.png" class ="image"><label for="Hanize">🌱Hanize</label></label></section>
+                <input type="radio" name="Mokepon" id="Hanize"/>
+        </div>
+        <div class="Mokepones">
+                <section class="Mokepon-card"><label for="Mizuhi"class="Mokepon-card"><img src="content/images/Mokepons/Mizuhi.png" class ="image"><label for="Mizuhi">💧🔥Mizuhi</label></label><input type="radio" name="Mokepon" id="Mizuhi"/></section>
 
-                <label for="Hahine"><img src="content/images/Mokepons/Hahine.png" class ="image"><label for="Hahine">🌱🔥Hahine</label><input type="radio" name="Mokepon" id="Hahine"/></label>
-        </section>
-                <button id="button-select-mokepon" class="user-button">Confirmar</button>
+                <section class="Mokepon-card"><label for="Hazu"class="Mokepon-card"><img src="content/images/Mokepons/Hazu.png" class ="image"><label for="Hazu">💧🌱Hazu</label></label><input type="radio" name="Mokepon" id="Hazu"/></section>
+
+                <section class="Mokepon-card"><label for="Hahine"class="Mokepon-card"><img src="content/images/Mokepons/Hahine.png" class ="image"><label for="Hahine">🌱🔥Hahine</label></label><input class="Mokepon-card" type="radio" name="Mokepon" id="Hahine"/></section>
+        </div>
+
+        <button id="button-select-mokepon" class="user-button">Confirmar</button>
     </div>
     <div id ="player-atack-choise">
         <section>
             <section id="battle-images">
-                <p id="image-player-mokepon"></p>
-                <h3>Vs</h3>
-                <p id="image-rival-mokepon"></p>
+                <div id="image-rival-mokepon">
+                    <h3>El Rival</h3>
+                </div>
+                <p><span id="rival-mokepon-name"></span> Rival tiene <span id="rival-life">3</span> HP</p>
+                
+                <div id="image-player-mokepon">
+                    <h3>Tu Mokepon</h3>
+                </div>
+                <p><span id="player-mokepon-name"></span> tiene <span id="player-life"> 3 </span> HP</p>  
             </section>
+            
             <h2>¡Elige Tú Ataque!</h2>
-            <p>Tu Mokepon <span id="player-mokepon-name"></span> tiene <span id="player-life"> 3 </span> Puntos de energia vital</p>     
-            <p>El Mokepon <span id="rival-mokepon-name"></span> del contricante es de <span id="rival-life">3</span> puntos de energia vital</p>
             <p>
                 <button id="button-fire">Fuego 🔥</button>
                 <button id="button-water">Agua 💧</button>
