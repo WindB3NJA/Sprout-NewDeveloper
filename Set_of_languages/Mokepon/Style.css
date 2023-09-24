@@ -1,42 +1,38 @@
-body{
+body {
     color: #435334;
     background-color: #FAF1E4;
     margin: auto;
-    text-align: center; 
-    width: 520px;
-    padding: 25px;
+    text-align: center;
+    width: 620px;
+    padding: 50px;
     font-family: 'Arial', sans-serif;
 }
 
-#Landing-Page{
+#Landing-Page {
     margin-bottom: 10px;
 }
 
-#player-Mokepon-choise{
+#player-Mokepon-choise {
     margin-top: 10px;
 }
 .image > img {
     width: 52px;
     height: 52px;
 }
-.Mokepon-card{
+.Mokepon-card {
     background-color: #CEDEBD;
     display: inline-block;
     text-align: center;
-    height: 150px;
-    width: 150px;
+    height: 115px;
+    width: 115px;
     box-sizing: border-box;
-    border-radius: 60%;
+    border-radius: 50%;
     flex-direction: row;
-    justify-content: space-between;
 }
 input {
-    text-align: center;
-    align-items: center;
-    height: auto;
-    width: auto;
+    display: none;
 }
-.Mokepon-card img{
+.Mokepon-card img {
     display: flexbox;
     flex-direction: row;
     height: auto;
@@ -50,35 +46,47 @@ input {
     height: auto;
     width: auto;
   }
-#image-player-mokepon{
+#button-select-mokepon{
+    margin-top: 10px;
+}
+#battle-images{
+    text-align: center;
+    align-items: center;
+    width: 640px;
+    height: 360px;
+    background-image: url(content/images/Battle/latest.jpg);
+    background-size: cover;
+}
+#image-rival-mokepon {
+    margin-left: 490px;
+    margin-right: 25px;
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: black;
+}
+#image-rival-mokepon > h3 {
+    transform: rotate(10deg);
+}
+#image-rival-mokepon > img {
+    transform: scaleX(1);
+}
+#image-player-mokepon {
     margin-left: 25px;
+    margin-right: 450px;
     display: flex;
     flex-direction: row;
+    background-color: black;
 }
-#image-player-mokepon > h3{
+#image-player-mokepon > h3 {
     transform: rotate(-10deg);
 }
-#image-player-mokepon > img{
+#image-player-mokepon > img {
     transform: scaleX(-1);
 }
 
-#image-rival-mokepon{
-    margin-right: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-}
-#image-rival-mokepon > h3{
-    transform: rotate(10deg);
-}
-#image-rival-mokepon > img{
-    transform: scaleX(1);
-}
 
-#Mokepones{
-    margin-bottom: 10px;
-}
 
-.user-button{
+.user-button {
     background-color: #CEDEBD;
     color: #435334;
     margin: auto;
