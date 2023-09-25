@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 body {
     color: #435334;
     background-color: #FAF1E4;
@@ -5,7 +6,7 @@ body {
     text-align: center;
     width: 620px;
     padding: 50px;
-    font-family: 'Arial', sans-serif;
+    font-family: 'Patrick Hand', cursive;
 }
 
 #Landing-Page {
@@ -21,16 +22,17 @@ body {
 }
 .Mokepon-card {
     background-color: #CEDEBD;
-    display: inline-block;
-    text-align: center;
     height: 125px;
     width: 125px;
-    box-sizing: border-box;
-    border-radius: 50%;
-    margin: 0.4%;
-    flex-direction: row;
     padding: 1.5%;
-    border: solid ;
+    box-sizing: border-box;
+    border: solid;
+    border-radius: 50%;
+    margin-top: 0.4%;
+    margin-bottom: 0.4%;
+    gap: 0.4%;
+    display: inline-flex;
+    text-align: center;
 }
 input {
     display: none;
@@ -57,7 +59,7 @@ input {
     align-items: center;
     width: 640px;
     height: 360px;
-    background-image: url(content/images/Battle/latest.jpg);
+    background-image: url(content/assets/Battle/latest.jpg);
     background-size: cover;
 }
 #image-rival-mokepon {
@@ -84,8 +86,6 @@ input {
 #image-player-mokepon > img {
     transform: scaleX(-1);
 }
-
-
 
 .user-button {
     background-color: #CEDEBD;
