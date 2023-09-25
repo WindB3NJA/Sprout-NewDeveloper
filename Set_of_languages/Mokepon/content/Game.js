@@ -66,8 +66,8 @@ function PlayerChoise() {
         PlayerMokeponImage.src ="content/assets/Mokepons/Hanize.png"
         document.getElementById("image-player-mokepon").appendChild(PlayerMokeponImage);
     } else if (choiseMizuhi.checked) {
-        PlayerMokepon.innerHTML = "💧🔥Mizuhi"
-        alert("Haz seleccionado a 💧🔥Mizuhi")
+        PlayerMokepon.innerHTML = "🔥💧Mizuhi"
+        alert("Haz seleccionado a 🔥💧Mizuhi")
         PlayerMokeponImage.src ="content/assets/Mokepons/Mizuhi.png"
         document.getElementById("image-player-mokepon").appendChild(PlayerMokeponImage);
     } else if (choiseHazu.checked) {
@@ -116,8 +116,8 @@ function rivalMokeponChoise() {
         RivalMokeponImage.src ="content/assets/Mokepons/Hanize.png"
         document.getElementById("image-rival-mokepon").appendChild(RivalMokeponImage);
     } else if (rivalMokeponChoise == 4) {
-        RivalMokepon.innerHTML = "💧🔥Mizuhi"
-        alert("Tú rival ha seleccionado a 💧🔥Mizuhi")
+        RivalMokepon.innerHTML = "🔥💧Mizuhi"
+        alert("Tú rival ha seleccionado a 🔥💧Mizuhi")
         RivalMokeponImage.src ="content/assets/Mokepons/Mizuhi.png"
         document.getElementById("image-rival-mokepon").appendChild(RivalMokeponImage);
     } else if (rivalMokeponChoise == 5) {
