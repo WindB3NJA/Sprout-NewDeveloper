@@ -185,7 +185,7 @@ function gameMesaggeStatus() {
         gameBattleResults = "Leña para el asado 🔥, ¡Haz Ganado esta ronda!"
         rivalBattleLife--
     } 
-    let gameMessageAtack  = document.getElementById("battle-messages");
+    let gameMessageAtack  = document.getElementById("battle-status");
     let BattleString = document.createElement("p");
     BattleString.innerHTML = "Tú mascota Ataco con "+ playerAtack +", La mascota del Rival Ataco con "+ rivalAtack +" - "+ gameBattleResults
     gameMessageAtack.appendChild(BattleString);
