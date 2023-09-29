@@ -4,6 +4,12 @@
 body {
     color: #435334;
     background-color: #CEDEBD;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
     margin: auto;
     text-align: center;
     align-items: center; 
@@ -14,14 +20,14 @@ body {
     background-color: #FAF1E4;
     border: #435334;
     border-radius: 20%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    margin-left: 20%;
-    margin-right: 20%;
-    
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 #Landing-Page {
     margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+
 }
 .Landing-title {
     font-size: 70px;
@@ -86,13 +92,11 @@ input {
     text-align: center;
     align-items: center;
     background: center;
-
 }
 #image-rival-mokepon {
     margin-right: 25px;
     display: flex;
     flex-direction: row-reverse;
-    background-color:#CEDEBD;
 }
 #image-rival-mokepon > h3 {
     transform: rotate(10deg);
@@ -101,11 +105,9 @@ input {
     transform: scaleX(1);
 }
 #image-player-mokepon {
-    margin-right: auto;
     margin-left: 25px;
     display: flex;
     flex-direction: row;
-    background-color: #CEDEBD;
 }
 #image-player-mokepon > h3 {
     transform: rotate(-10deg);
@@ -144,4 +146,8 @@ input {
 .user-button:hover {
     cursor: pointer;
     color: #9EB384;
+}
+
+footer{
+    margin-bottom: 10px;
 }
