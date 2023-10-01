@@ -224,11 +224,13 @@ function gameBattleFinalResults() {
         //Perdiste
         buttonDisableAtack()
         BattleResultsString.innerHTML = "😞Haz Perdido la Batalla😞, con " + playerBattleLife + " Puntos vitales vs los Puntos "+ rivalBattleLife +" vitales del enemigo"
+        //Imagen del personaje rival 
         BattleResults.appendChild(BattleResultsString);
     } else if (rivalBattleLife == 0){
         //ganaste
         buttonDisableAtack()
         BattleResultsString.innerHTML = "🎊Haz Ganado la Batalla🎊, con " + playerBattleLife + " Puntos vitales vs los Puntos "+ rivalBattleLife +" vitales del enemigo"
+        //IMAGEN del personaje del jugador
         BattleResults.appendChild(BattleResultsString);
     }
 }
