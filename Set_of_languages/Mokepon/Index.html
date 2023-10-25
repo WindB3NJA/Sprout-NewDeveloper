@@ -10,7 +10,7 @@
 </head>
 
 <body>
-<div id="game">
+<div id="All-game-content">
     <section id="Landing-Page">
         <h1 class="Landing-title">Mokepon</h1>
         <h2 class="Landing-subtitle">🔥💧🌱</h2>
@@ -18,7 +18,7 @@
     </section>
     <div id="player-Mokepon-choise">
         <h2 class="sub-title">¡Elige a Tú Mokepon!</h2>
-        <div class="Mokepones">
+        <div class="section-mokepon">
             <section class="Mokepon-card"><label for="Radinten"><img src="content/assets/Mokepons/Radinten.png"
                         class="image"><label for="Radinten">🔥Raditen</label></label></section>
             <input type="radio" name="Mokepon" id="Radinten" />
@@ -33,7 +33,7 @@
                         for="Hanize">🌱Hanize</label></label></section>
             <input type="radio" name="Mokepon" id="Hanize" />
         </div>
-        <div class="Mokepones">
+        <div class="section-mokepon">
             <section class="Mokepon-card"><label for="Mizuhi"><img
                         src="content/assets/Mokepons/Mizuhi.png" class="image"><label
                         for="Mizuhi">🔥💧Mizuhi</label></label></section>
@@ -65,15 +65,16 @@
         <section>
             <h2>Batalla</h2>
             <section id="battle-images">
-                <div id="image-rival-mokepon">
+                <div class="hub-rival">
+                    <p id="hub-div"><span id="rival-mokepon-name"></span> Rival tiene <span id="rival-life">3</span> HP</p>
+                    <p id="image-rival-mokepon"></p>
                     <h3>El Rival</h3>
                 </div>
-                <p><span id="rival-mokepon-name"></span> Rival tiene <span id="rival-life">3</span> HP</p>
-
-                <div id="image-player-mokepon">
+                <div class="hub-player">
+                    <p id="hub-div"><span id="player-mokepon-name"></span> tiene <span id="player-life"> 3 </span> HP</p>
+                    <p id="image-player-mokepon"></p>
                     <h3>Tu Mokepon</h3>
                 </div>
-                <p><span id="player-mokepon-name"></span> tiene <span id="player-life"> 3 </span> HP</p>
             </section>
         </section>
     </div>

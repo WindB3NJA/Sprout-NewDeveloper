@@ -10,18 +10,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: auto;
     text-align: center;
     align-items: center; 
-    width: auto;
     font-family: 'Patrick Hand', cursive;
 }
-#game {
+#All-game-content {
     background-color: #FAF1E4;
     border: #435334;
     border-radius: 20%;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 #Landing-Page {
     margin-bottom: 10px;
@@ -83,42 +81,64 @@ input {
     display: none;
 }
 
-
 #button-select-mokepon {
     margin-top: 10px;
 }
-#battle-images {
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
-    align-items: center;
-    background: center;
-    border: 4px solid ;
-    color: #435334;;
-    border-radius: 20px;
 
+#battle-images {
+    width: auto;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+    background: center;
+    border: 4px solid;
+    color: #435334;
+    border-radius: 20px;
 }
 #image-rival-mokepon {
     margin-right: 25px;
     display: flex;
     flex-direction: row-reverse;
 }
-#image-rival-mokepon > h3 {
-    transform: rotate(10deg);
-}
+
 #image-rival-mokepon > img {
-    transform: scaleX(1);
+    transform: scaleX(-1);
+}
+
+.hub-rival {
+    padding: 5px;
+    margin-left: 25px;
+    margin-right: 400px;
+    display: flex;
+    border: 3px solid;
+    color: #435334;
+    border-radius: 5px;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
 }
 #image-player-mokepon {
-    margin-left: 25px;
-    display: flex;
-    flex-direction: row;
-}
-#image-player-mokepon > h3 {
-    transform: rotate(-10deg);
+
 }
 #image-player-mokepon > img {
-    transform: scaleX(-1);
+    transform: scaleX(1);
+}
+.hub-player {
+    padding: 5px;
+    margin-left: 400px;
+    margin-right: 25px;
+    display: flex;
+    border: 3px solid;
+    color: #435334;
+    border-radius: 5px;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: left;
+}
+#hub-div {
+    text-align: left;
+    border-inline-start: inherit;
 }
 
 #battle-status {
