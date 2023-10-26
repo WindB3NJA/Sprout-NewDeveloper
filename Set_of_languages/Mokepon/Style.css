@@ -86,7 +86,8 @@ input {
 }
 
 #battle-images {
-    width: auto;
+    width: 645px;
+    height: 285px;
     padding: 20px;
     margin-left: 50px;
     margin-right: 50px;
@@ -95,9 +96,10 @@ input {
     border: 4px solid;
     color: #435334;
     border-radius: 20px;
+    background-image: url(content/assets/Battle/4325.png);
+    background-size: cover;
 }
 #image-rival-mokepon {
-    margin-right: 25px;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -119,7 +121,8 @@ input {
     text-align: left;
 }
 #image-player-mokepon {
-
+    display: flex;
+    flex-direction: row;
 }
 #image-player-mokepon > img {
     transform: scaleX(1);
@@ -135,10 +138,77 @@ input {
     flex-direction: row-reverse;
     align-items: center;
     text-align: left;
+    background: unset;
 }
 #hub-div {
     text-align: left;
     border-inline-start: inherit;
+}
+
+#buttons-atack {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    font-family: 'Patrick Hand', cursive;
+}
+#button-fire {
+    background-image: url(content/assets/Battle/Fire.png);
+    width: auto;
+    height: 47px;
+    border: none;
+    border-radius: 30px;
+    background-size: cover;
+    color: transparent;
+       
+}
+#button-fire:hover {
+    cursor: pointer;
+    border: 3px solid;
+    border-color: #435334;
+    color: black;
+    width: 140px;
+    height: 47px;
+    font-size: 20px;
+}
+
+#button-water {
+    background-image: url(content/assets/Battle/Water.png);
+    width: auto;
+    height: 47px;
+    border: none;
+    border-radius: 30px;
+    background-size: cover;
+    color: transparent;
+}
+#button-water:hover {
+    cursor: pointer;
+    border: 3px solid;
+    border-color: #435334;
+    color: black;
+    width: 140px;
+    height: 47px;
+    font-size: 20px;
+}
+#button-plant {
+    background-image: url(content/assets/Battle/Plant.png);
+    width: auto;
+    height: 47px;
+    border: none;
+    border-radius: 30px;
+    background-size: cover;
+    font-display:initial;
+    color: transparent;
+}
+
+#button-plant:hover {
+    cursor: pointer;
+    border: 3px solid;
+    border-color: #435334;
+    color: black;
+    width: 140px;
+    height: 47px;
+    font-size: 20px;
 }
 
 #battle-status {
