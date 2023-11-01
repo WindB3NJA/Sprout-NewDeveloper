@@ -226,13 +226,39 @@ input {
     font-size: 20px;
 }
 
-#battle-status {
-    overflow: scroll;
-    margin: auto;
-    text-align: center;
-    align-items: center;
-    width: 600px;
-    height: 100px;
+#messages {
+    border: 4px solid;
+    border-radius: 25px;
+    margin-left: 50px;
+    margin-right: 50px;
+    background: linear-gradient(rgb(81, 166, 87), rgb(56, 116, 61));
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.rivals-Desing {
+    color: #CEDEBD;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    width: 76.98px
+}
+.rivals-Desing > h2 {
+    border: 1px solid;
+    border-radius: 25px;
+}
+#Results-Design {
+    color: #CEDEBD;
+    border: 2px solid;
+    border-radius: 10px;
+    padding: 5px;
+    backdrop-filter: blur(10px);
+    width: 391px
+}
+#Results-Design> h2 {
+    border: 1px solid;
+    border-radius: 25px;
 }
 
 

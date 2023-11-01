@@ -1,5 +1,5 @@
 //Jugador
-let playerAtack
+let playerAtack 
 let playerBattleLife = 3 ;
 //Rival
 let rivalAtack
@@ -185,10 +185,22 @@ function gameMesaggeStatus() {
         gameBattleResults = "Leña para el asado 🔥, ¡Haz Ganado esta ronda!"
         rivalBattleLife--
     } 
+    //Señalar donde se pondra el texto 
+    let gameMessageRival  = document.getElementById("Rival-atacks");
     let gameMessageAtack  = document.getElementById("battle-status");
-    let BattleString = document.createElement("p");
-    BattleString.innerHTML = "Tú mascota Ataco con "+ playerAtack +", La mascota del Rival Ataco con "+ rivalAtack +" - "+ gameBattleResults
-    gameMessageAtack.appendChild(BattleString);
+    let gameMessagePlayer = document.getElementById("Player-atacks");
+    //En que elemento se guardara
+    let MessageRival = document.createElement("p");
+    let BattleStatus = document.createElement("p");
+    let MessagePlayer = document.createElement("p");
+    //Guardar los textos que insertara
+    MessageRival.innerHTML = rivalAtack
+    BattleStatus.innerHTML = gameBattleResults
+    MessagePlayer.innerHTML = playerAtack
+    //Insertar el elemento en el HTML
+    gameMessageRival.appendChild(MessageRival);
+    gameMessageAtack.appendChild(BattleStatus);
+    gameMessagePlayer.appendChild(MessagePlayer);
     //Sistema de vidas en HTML
     let playerStringLife = document.getElementById("player-life");
     let rivalStringLife = document.getElementById("rival-life");
